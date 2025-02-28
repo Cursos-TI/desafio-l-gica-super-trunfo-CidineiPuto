@@ -1,74 +1,40 @@
-# ⚠️ Importante!!!
-Você pode escolher qualquer um dos desafios para desenvolver. Sinta-se à vontade para começar pelo desafio que mais lhe interessa.
+# Como baixar o programa ( vscode )
 
-# Desafio Super Trunfo - Países - Comparação das Cartas
+Para baixar o programa pelo vscode, basta entrar no site https://www.mingw-w64.org/ e baixar o arquivo mingw. Assim, poderá ser instalado e baixado o próprio vscode logo após. Depois das configurações do vscode de maneira que o deixe agradável, irá colocar o path .c no seu computador, para  isso basta seguir as intruções;
 
-Bem-vindo ao desafio "Super Trunfo - Países"! Neste projeto, você desenvolverá um sistema para comparar cartas baseadas em atributos de cidades. O desafio é dividido em três níveis: Novato, Aventureiro e Mestre. Cada nível adiciona novas funcionalidades e complexidades, permitindo um aprendizado progressivo.
+1 - Abrir o windows
+2 - Digitar sistemas
+3 - Em sistemas clique em "proteção do sistema"
+4 - Com as propriedades abertas clique em "avançado" 
+5 - Clique em variáveis de ambiente
+6 - Na pasta path irá adicionar onde está a pasta do mingw, entrará na pasta entrará na pasta bin do mingw e copie o caminho
+7 - Clique no path, depois clique em editar e por fim clique em novo. Lá será adicionado a pasta do mingw
+8 - Irá executar o mesmo processo nas variáveis de sistema.
 
-## 🏅 Nível Novato
+No vscode irá instalar as extensões "C/C++" e "C/C++ compile run". Caso tenha dificuldades apenas vá neste vídeo a seguir:
+https://www.youtube.com/watch?v=3pfRvy_gfqY
+( Canal próprio do criador de vídeos studway )
 
-No nível Novato, você começará implementando a lógica básica de comparação entre cartas utilizando estruturas de decisão `if` e `if-else`.
+# Como usar no vscode
 
-### 🚩 Objetivos:
-- **Cadastro de Cartas:** O sistema permitirá ao usuário cadastrar cartas de cidades, incluindo informações como estado, código da carta, nome da cidade, população, área, PIB e número de pontos turísticos.
-- **Comparação de Cartas:** O sistema comparará os atributos de duas cartas e determinará a vencedora com base em uma propriedade específica (população, área, PIB, etc.), escolhida no código.
-- **Exibição de Resultados:** Após a comparação, o sistema exibirá qual carta venceu com base na regra: maior valor vence, exceto em densidade populacional, onde o menor valor é o vencedor.
+No vscode apenas crie um repositório ( após a criação de sua conta ) e clique em code, depois "code space" lá pode escrever este código. Sobre as extensões, será baixado as mesmas do vscode citado anteriormente.
 
-### 📥 Entrada de Dados:
-- Os dados das cartas serão inseridos manualmente via terminal.
-- O sistema solicitará interativamente as informações de cada carta.
+# Como usar o programa
 
-### 📤 Saída de Dados:
-- Após o cadastro, as propriedades da cidade serão exibidas de forma organizada.
-- O resultado da comparação será mostrado, indicando a carta vencedora.
+A execução é simples, após executar o programa coloque os inputs certos.
 
----
+Nome do país: Pode ser qualquer nome de país, nome junto sem acento 
 
-## 🏅 Nível Aventureiro
+Estado: O estado será uma LETRA de A a H, apenas uma letra.
 
-No nível Aventureiro, você expandirá o sistema para incluir a comparação aninhada e a criação de um menu interativo usando `switch`.
+Codigo de carta: O código será por exemplo "A01" (A) - Estado (01) - Este 01 será feito pela quantidade de código por exemplo, digamos que tenha mais uma letra "A" ou seja, 2 estados com essa letra, assim iria ficar (PRIMEIRO CÓDIGO: A01 | SEGUNDO CÓDIGO: A02) e por aí vai.
 
-### 🆕 Diferença em relação ao Nível Novato:
-- **Menu Interativo:** O usuário poderá escolher diferentes atributos para comparação através de um menu.
-- **Comparação Aninhada:** Implementação de lógica de comparação mais complexa, utilizando estruturas aninhadas para tomar decisões baseadas em múltiplos atributos.
+Nome da cidade: Nome da cidade do estado escolhido, esse nome será junto sem acento.
 
-### 🚩 Novas Funcionalidades:
-- **Cadastro de Cartas:** Similar ao nível Novato, com a adição de comparação de múltiplos atributos.
-- **Menu Interativo:** Uso de `switch` para criar um menu que permite ao jogador escolher os atributos a serem comparados.
-- **Exibição de Resultados:** O sistema exibirá o resultado da comparação, indicando qual carta venceu e qual atributo foi utilizado.
+População: População da cidade em números inteiros
 
----
+Area em km2: A área em km2 da cidade, ela será em float ( número de ponto flutuante | número com vírgula )
 
-## 🏅 Nível Mestre
+PIB: Pib em bilhões de reais da cidade, por exemplo, se for 70 bilhões o pib, será colocado como "70" apenas, não o número completo como "70000000000", e por ser float, pode colocar por exemplo 70.56.
 
-No nível Mestre, o desafio se intensifica com a adição de funcionalidades avançadas, como menus dinâmicos e lógica de decisão complexa com operadores ternários.
-
-### 🆕 Diferença em relação ao Nível Aventureiro:
-- **Escolha de Dois Atributos:** O usuário poderá escolher dois atributos para comparação entre as cartas.
-- **Lógica de Decisão Complexa:** Implementação de estruturas de decisão aninhadas e encadeadas, além do uso de operadores ternários para determinar a carta vencedora.
-- **Menus Dinâmicos:** Os menus serão dinâmicos, permitindo uma navegação fluida entre as opções de comparação.
-
-### 🚩 Novas Funcionalidades:
-- **Comparação de Dois Atributos:** O sistema comparará dois atributos simultaneamente para determinar a carta vencedora.
-- **Lógica Avançada:** Uso de operadores ternários e lógica aninhada para lidar com comparações complexas.
-- **Empates:** O sistema será capaz de lidar com empates, exibindo mensagens apropriadas.
-- **Exibição de Resultados:** Exibição dos resultados das comparações de forma clara e interativa.
-
----
-
-## 📋 Requisitos Funcionais Comuns
-- **Cadastro de Cartas:** O sistema deve permitir o cadastro de cartas com as informações necessárias.
-- **Comparação:** O sistema deve comparar as cartas e determinar a vencedora com base nas regras estabelecidas.
-- **Exibição de Resultados:** Os resultados devem ser exibidos de forma clara, indicando a carta vencedora.
-
-## 📌 Requisitos Não Funcionais Comuns
-- **Usabilidade:** A interface do usuário deve ser simples e intuitiva.
-- **Performance:** O sistema deve executar operações sem atrasos perceptíveis.
-- **Manutenibilidade:** O código deve ser bem estruturado e documentado.
-- **Confiabilidade:** O sistema deve ser robusto e capaz de lidar com entradas inválidas de forma adequada.
-
----
-
-Boa sorte no desenvolvimento deste desafio e aproveite para aprender e se divertir enquanto progride pelos níveis!
-
-Equipe de Ensino - MateCheck
+numero pontos turísticos: Número de pontos turísticos que a cidade possui.
